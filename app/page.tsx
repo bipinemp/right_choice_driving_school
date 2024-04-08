@@ -4,7 +4,7 @@ import Why from "@/components/Home/Why";
 
 export default function Page() {
   return (
-    <main>
+    <main className="mt-44">
       <Search />
       <Hero />
       <Why />

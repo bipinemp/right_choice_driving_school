@@ -7,7 +7,7 @@ import { Button } from "../ui/button";
 
 const Navbar = () => {
   return (
-    <header className="flex flex-col">
+    <header className="fixed top-0 inset-x-0 z-50 flex flex-col">
       <div className="py-2 px-20 bg-primary flex items-center gap-5 justify-end">
         <Link href={"/callback"} className="underline text-background text-sm">
           Phone <span className="font-bold">02 8091 3036</span>
@@ -16,7 +16,7 @@ const Navbar = () => {
           Login
         </Button>
       </div>
-      <nav className="flex items-center justify-between px-20 py-5 shadow">
+      <nav className="bg-background/95 backdrop-blur flex items-center justify-between px-20 py-5 shadow">
         <Image
           src="https://cdn.bookingtimes.com/Common/LoadImage?Id=107223&v=5"
           width={150}
