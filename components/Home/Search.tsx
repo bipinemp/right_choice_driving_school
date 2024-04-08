@@ -118,7 +118,11 @@ const Search = () => {
               setTimeout(() => searchRef?.current?.focus(), 0);
             }}
           >
-            <SelectTrigger className="w-[350px] py-5 opacity-70">
+            <SelectTrigger
+              className={cn("w-[350px] py-5 opacity-70", {
+                "opacity-100": suburb !== "",
+              })}
+            >
               <SelectValue autoFocus={false} placeholder="Enter your suburb" />
             </SelectTrigger>
             <SelectContent>
