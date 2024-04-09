@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { offerList } from "./OfferList";
+import { offerList } from "./lists/OfferList";
 
 const Offer = () => {
   return (

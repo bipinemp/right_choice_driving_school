@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import { PricingList } from "./PricingList";
+import { PricingList } from "./lists/PricingList";
 import { cn } from "@/lib/utils";
 
 const Pricing = () => {
@@ -27,7 +27,7 @@ const Pricing = () => {
                 )}
               />
             </div>
-            <div className="absolute w-[200px] h-[200px] mx-auto bg-primary text-background left-0 right-0 -top-3 before:w-[8px] before:h-[0px] before:border-primary/50 before:border-l-transparent before:border-r-transparent before:border-l-[6px]  before:border-b-[12px] before:border-r-[6px] before:-left-[0.35rem] before:bg-transparent before:absolute">
+            <div className="absolute w-[200px] h-[200px] mx-auto bg-secondary text-background left-0 right-0 -top-3 before:w-[8px] before:h-[0px] before:border-secondary/50 before:border-l-transparent before:border-r-transparent before:border-l-[6px]  before:border-b-[12px] before:border-r-[6px] before:-left-[0.35rem] before:bg-transparent before:absolute">
               <h1 className="flex items-center justify-center mt-8 font-black">
                 {pricing.price}
               </h1>
