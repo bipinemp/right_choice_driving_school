@@ -3,12 +3,12 @@ import React from "react";
 
 const Why = () => {
   return (
-    <section className="flex flex-col gap-6 mt-20 mb-10 text-center">
-      <h1 className="font-black opacity-80">
+    <section className="flex flex-col gap-6 mt-10 sm:mt-20 md:mt-32 mmd:mt-40 llg:mt-20 mb-10 text-center">
+      <h1 className="text-[1.5rem] sm:text-[2rem] px-5 font-black opacity-80">
         WHY RIGHT CHOICE DRIVING SCHOOL ?
       </h1>
-      <div className="flex flex-col gap-6">
-        <p className="text-[0.9rem] opacity-80 text-balance">
+      <div className="flex flex-col gap-6 px-5">
+        <p className="text-[0.9rem] opacity-80 text-">
           Right Choice Driving School is one of the best driving school in
           Sydney trusted by thousands of learners in Sydney. All our driving
           instructors are qualified and experienced driving instructor, who is

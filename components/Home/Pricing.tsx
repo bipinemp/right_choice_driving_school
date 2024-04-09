@@ -11,7 +11,7 @@ const Pricing = () => {
         {PricingList.map((pricing, index) => (
           <div
             key={index}
-            className="relative flex flex-col justify-between items-center gap-3 py-7 px-10 w-[300px] h-[420px] bg-zinc-50 border border-input rounded-lg"
+            className="relative flex flex-col justify-between items-center gap-3 py-7 px-10 max-w-[280px] h-[420px] bg-zinc-50 border border-input rounded-lg"
           >
             <div className="w-full flex flex-col items-center mt-32">
               <Image
@@ -39,7 +39,9 @@ const Pricing = () => {
               ></div>
             </div>
             <h3 className="font-semibold text-primary">{pricing.title}</h3>
-            <p className="font-semibold opacity-80 text-sm">{pricing.desc}</p>
+            <p className="font-semibold opacity-80 text-sm text-center">
+              {pricing.desc}
+            </p>
             <Button>{pricing.button}</Button>
           </div>
         ))}

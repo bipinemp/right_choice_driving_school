@@ -75,16 +75,16 @@ const Search = () => {
 
   return (
     <section className="my-10 flex flex-col gap-5">
-      <h1 className="font-black opacity-70 text-center">
+      <h1 className="text-[1.6rem] sm:text-[2rem] font-black opacity-70 text-center">
         Choose from <span className="text-primary">&nbsp;1000+&nbsp;</span>{" "}
         Driving Instructors
       </h1>
-      <div className="py-3 px-10 border border-input shadow-md rounded-full w-fit mx-auto flex items-center justify-center gap-5">
+      <div className="py-3 px-5 vsm:px-10 border border-input shadow-md rounded-md md:rounded-full w-full vsm:w-fit mx-auto flex md:flex-row flex-col items-center justify-center gap-5">
         <Tabs
           value={tab}
           onValueChange={(e) => setTab(e)}
           defaultValue="account"
-          className="w-[330px] h-auto"
+          className="w-full vsm:w-[400px] md:w-[250px] lg:w-[330px] h-auto"
         >
           <TabsList className="w-full h-auto grid grid-cols-2 bg-zinc-200">
             <TabsTrigger value="auto" className="flex items-center gap-2 py-2">
@@ -111,7 +111,7 @@ const Search = () => {
           </TabsList>
         </Tabs>
 
-        <div>
+        <div className="w-full vsm:w-fit">
           <Select
             onValueChange={(e) => setSuburb(e)}
             onOpenChange={() => {
@@ -119,9 +119,12 @@ const Search = () => {
             }}
           >
             <SelectTrigger
-              className={cn("w-[350px] py-5 opacity-70", {
-                "opacity-100": suburb !== "",
-              })}
+              className={cn(
+                "w-full vsm:w-[400px] md:w-[250px] lg:w-[350px] py-5 opacity-70",
+                {
+                  "opacity-100": suburb !== "",
+                }
+              )}
             >
               <SelectValue autoFocus={false} placeholder="Enter your suburb" />
             </SelectTrigger>
@@ -151,7 +154,10 @@ const Search = () => {
           </Select>
         </div>
 
-        <Button onClick={handeSearchSubmit} className="flex items-center gap-2">
+        <Button
+          onClick={handeSearchSubmit}
+          className="w-full vsm:w-[400px] md:w-fit flex items-center gap-2"
+        >
           <SearchIcon className="size-5" />
           Search
         </Button>
