@@ -72,8 +72,8 @@ const Footer = () => {
       <div className="flex items-center justify-center gap-3 w-full bg-background text-foreground text-center py-3">
         <Image
           src={"https://cdn.bookingtimes.com/Images/Home/BookingTimesLogo.png"}
-          width={50}
-          height={50}
+          width={35}
+          height={35}
           alt="Bookingtimes.com logo"
         />
         <Link
