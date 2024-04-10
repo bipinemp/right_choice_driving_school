@@ -14,7 +14,7 @@ const Packages = () => {
         {PackagesList.map((pack, index) => (
           <div
             key={index}
-            className="bg-gradient-to-r from-primary/50 to-primary max-w-[350px] text-background h-[450px] py-6 rounded-lg border border-input shadow flex flex-col items-center justify-between"
+            className="bg-zinc-100 max-w-[350px] text-foreground h-[450px] py-6 rounded-lg border border-input shadow flex flex-col items-center justify-between"
           >
             <Image src={pack.img} width={100} height={100} alt="Package Icon" />
             <div className="w-full flex flex-col">
@@ -22,7 +22,7 @@ const Packages = () => {
                 <p
                   key={index}
                   className={cn(
-                    "font-semibold text-center py-2 px-4 opacity-90 md:text-sm text-[0.8rem]",
+                    "font-semibold text-center py-2 px-4 opacity-70 md:text-sm text-[0.8rem]",
                     {
                       "border-t border-t-zinc-300 border-b border-b-zinc-300":
                         index === 0 || index + 1 === pack.desc.length,
