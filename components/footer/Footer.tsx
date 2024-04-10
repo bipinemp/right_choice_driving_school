@@ -7,8 +7,8 @@ import { Facebook, Mail, MapPin, Phone } from "lucide-react";
 const Footer = () => {
   return (
     <footer className="flex flex-col gap-y-10 items-center pt-10 bg-primary text-background">
-      <div className="grid grid-cols-3 gap-x-10">
-        <div className="flex flex-col gap-4 items-center">
+      <div className="grid grid-cols-1 w-full px-10 lg:grid-cols-3 gap-x-5 mmd:gap-x-10 gap-y-10">
+        <div className="w-full flex flex-col gap-4 items-start lg:items-center">
           <Image
             src="https://cdn.bookingtimes.com/Common/LoadImage?Id=107504&v=1"
             width={200}
@@ -27,7 +27,7 @@ const Footer = () => {
               <Link
                 key={index}
                 href={item.link}
-                className="transition duration-150 hover:underline"
+                className="transition duration-150 hover:underline lg:text-[1rem] text-sm"
               >
                 {item.name}
               </Link>
@@ -39,28 +39,28 @@ const Footer = () => {
           <h3 className="font-black opacity-90">Contact Us</h3>
           <div className="flex flex-col gap-y-4">
             <Link
-              className="flex items-center gap-2 transition duration-150 hover:underline"
+              className="flex items-center gap-2 transition duration-150 hover:underline lg:text-[1rem] text-sm"
               href={"/location"}
             >
               <MapPin className="size-5" />
               The Strand, NSW, Sydney.
             </Link>
             <Link
-              className="flex items-center gap-2 transition duration-150 hover:underline"
+              className="flex items-center gap-2 transition duration-150 hover:underline lg:text-[1rem] text-sm"
               href={"/contact"}
             >
               <Mail className="size-5" />
               info@rightchoicedriving.com.au
             </Link>
             <Link
-              className="flex items-center gap-2 transition duration-150 hover:underline"
+              className="flex items-center gap-2 transition duration-150 hover:underline lg:text-[1rem] text-sm"
               href={"/contact"}
             >
               <Phone className="size-5" />
               02 8091 3036
             </Link>
             <Link
-              className="flex items-center gap-2 transition duration-150 hover:underline"
+              className="flex items-center gap-2 transition duration-150 hover:underline lg:text-[1rem] text-sm"
               href={"https://www.facebook.com/profile.php?id=61550803378173"}
             >
               <Facebook className="size-5" />
@@ -69,15 +69,16 @@ const Footer = () => {
           </div>
         </div>
       </div>
+
       <div className="flex items-center justify-center gap-3 w-full bg-background text-foreground text-center py-3">
         <Image
           src={"https://cdn.bookingtimes.com/Images/Home/BookingTimesLogo.png"}
-          width={35}
-          height={35}
+          width={30}
+          height={30}
           alt="Bookingtimes.com logo"
         />
         <Link
-          className="transition duration-150 hover:underline"
+          className="vsm:text-[1rem] text-xs transition duration-150 hover:underline"
           href={
             "https://bookingtimes.com/Complete-Driving-School-Software?b=rightchoicedriving.com.au"
           }

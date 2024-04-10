@@ -14,8 +14,8 @@ export default function Page() {
       <Why />
       <Offer />
       <Pricing />
-      {/* <Packages /> */}
-      {/* <Resources /> */}
+      <Packages />
+      <Resources />
     </main>
   );
 }

@@ -12,7 +12,7 @@ const Navbar = () => {
         <div className="max-w-[1920px] mx-auto 2xl:px-80 flex items-center gap-5 justify-end">
           <Link
             href={"/callback"}
-            className="underline text-background text-sm"
+            className="underline text-background text-xs vsm:text-sm"
           >
             Phone <span className="font-bold">02 8091 3036</span>
           </Link>
